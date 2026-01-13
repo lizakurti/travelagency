@@ -1,0 +1,99 @@
+/* Font & Body */
+body#LK-body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f4f6f8;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Navbar */
+.navbar-dark .navbar-nav .nav-link.active {
+  color: #ff6b6b;
+}
+.navbar-dark .navbar-nav .nav-link:hover {
+  color: #ffd93d;
+  transition: 0.3s;
+}
+
+/* Hero Sections */
+.LK-hero {
+  background: linear-gradient(to right, #6a11cb, #2575fc);
+  color: #fff;
+  border-radius: 10px;
+  margin: 20px;
+  padding: 60px 20px;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+}
+.LK-hero h1 {
+  font-size: 3rem;
+  animation: fadeInDown 1s ease forwards;
+}
+.LK-hero p {
+  font-size: 1.2rem;
+  animation: fadeInUp 1.2s ease forwards;
+}
+
+/* Cards */
+.LK-card {
+  border: none;
+  border-radius: 15px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.LK-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 25px rgba(0,0,0,0.2);
+}
+
+/* Prices */
+.LK-price {
+  font-weight: bold;
+  color: #ff6b6b;
+  font-size: 1.2rem;
+}
+
+/* Footer */
+.LK-footer {
+  background: #222;
+  color: #fff;
+  font-size: 0.9rem;
+}
+
+/* Forms */
+form input, form textarea, form select {
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+form input:focus, form textarea:focus {
+  outline: none;
+  border-color: #ff6b6b;
+  box-shadow: 0 0 5px #ff6b6b;
+  transition: 0.3s;
+}
+
+/* Buttons */
+.btn-primary {
+  background: linear-gradient(to right, #ff6b6b, #ffd93d);
+  border: none;
+  color: #222;
+  font-weight: bold;
+  transition: 0.3s;
+}
+.btn-primary:hover {
+  transform: scale(1.05);
+}
+
+/* Animations */
+@keyframes fadeInDown {
+  0% {opacity: 0; transform: translateY(-50px);}
+  100% {opacity: 1; transform: translateY(0);}
+}
+@keyframes fadeInUp {
+  0% {opacity: 0; transform: translateY(50px);}
+  100% {opacity: 1; transform: translateY(0);}
+}
+
+/* Responsive */
+@media(max-width:768px){
+  .LK-hero h1 { font-size: 2rem; }
+  .LK-hero p { font-size: 1rem; }
+}
