@@ -131,7 +131,7 @@ body {
 
 /* Hero section */
 .hero {
-    background: url('../images/travel-hero.jpg') center/cover no-repeat;
+    background: url('../index.html.jpg') center/cover no-repeat;
     color: #fff;
     padding: 120px 20px 80px;
     text-align: center;
@@ -207,39 +207,26 @@ img {
     font-size: 16px;
   }
 }
-
-/* CAROUSEL */
-.carousel-caption h3 {
-  font-size: 24px;
+#LKcarousel .carousel-item img {
+  height: 40vh;       
+  max-height: 400px;  
+  object-fit: cover;  
 }
 
 @media (max-width: 768px) {
-  .carousel-caption h3 {
-    font-size: 18px;
+  #LKcarousel .carousel-item img {
+    height: 30vh;
+    max-height: 200px;
   }
 }
 
-/* SERVICES CARDS */
-.LK-card {
-  height: 100%;
+.carousel-caption {
+  bottom: 10px;        
+  background: rgba(0,0,0,0.3); 
+  border-radius: 5px;
+  padding: 5px 10px;
 }
 
-@media (max-width: 768px) {
-  .LK-services .row {
-    gap: 15px;
-  }
-}
 
-/* TABLE RESPONSIVE */
-@media (max-width: 768px) {
-  .LK-table {
-    font-size: 14px;
-  }
-}
 
-/* FOOTER */
-.LK-footer {
-  padding: 20px;
-  font-size: 14px;
-}
 
